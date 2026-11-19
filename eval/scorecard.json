@@ -1,0 +1,45 @@
+{
+  "source": "GET /examples",
+  "example_count": 10,
+  "before": {
+    "correct": {
+      "language": 10,
+      "category": 7,
+      "priority": 7,
+      "action": 6
+    },
+    "accuracy": {
+      "language": 1.0,
+      "category": 0.7,
+      "priority": 0.7,
+      "action": 0.6
+    },
+    "macro_accuracy": 0.75,
+    "mismatches": [
+      {"id": "E01", "fields": ["category", "priority"]},
+      {"id": "E02", "fields": ["priority"]},
+      {"id": "E05", "fields": ["category", "action"]},
+      {"id": "E06", "fields": ["category"]},
+      {"id": "E07", "fields": ["priority", "action"]},
+      {"id": "E08", "fields": ["action"]},
+      {"id": "E10", "fields": ["action"]}
+    ]
+  },
+  "after": {
+    "correct": {
+      "language": 10,
+      "category": 10,
+      "priority": 10,
+      "action": 10
+    },
+    "accuracy": {
+      "language": 1.0,
+      "category": 1.0,
+      "priority": 1.0,
+      "action": 1.0
+    },
+    "macro_accuracy": 1.0,
+    "mismatches": []
+  },
+  "paid_model_cost_eur_per_100_tickets": 0.0
+}
